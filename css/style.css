@@ -43,3 +43,18 @@ main {
   bottom: 0;
   right: 0;
 }
+
+/* MQ XS */
+@media screen and (max-width:600px) {
+  /* HEADER */
+
+  /* MAIN */
+  .main-nav {
+    width: 50px;
+  }
+  .main-content {
+    width: calc(100% - 50px);
+    margin-left: 50px;
+  }
+  /* FOOTER */
+}
