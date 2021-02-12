@@ -1,0 +1,45 @@
+/* COMMON */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: red;
+}
+/* FOOTER */
+.action-button {
+  height: 80px;
+  background: black;
+}
+/* MAIN */
+main {
+  height: calc(100vh - 160px);
+  width: 100%;
+  background: yellow;
+}
+.main-nav {
+  width: 250px;
+  background: pink;
+  height: 100%;
+  position: fixed;
+  top: 80px;
+  left: 0;
+}
+.main-content {
+  width: calc(100% - 250px);
+  height: 100%;
+  margin-left: 250px;
+  background: lightblue;
+}
+
+/* FOOTER */
+.ms-slider {
+  width: 100%;
+  height: 80px;
+  background: blue;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
