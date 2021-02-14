@@ -28,17 +28,17 @@
             <a href="#">
               <img src="img/logo.svg" alt="Logo">
             </a>
-            <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">Cerca</a></li>
-              <li><a href="">La tua libreria</a></li>
+            <ul class="list-unstyled">
+              <li><a href=""><span><i class="fas fa-home"></span></i> <span class="hidden-xs">Home</span></a></li>
+              <li><a href=""><span><i class="fas fa-search"></span></i> <span class="hidden-xs">Cerca</span></a></li>
+              <li><a href=""><span>||<div>|</div></span> <span class="hidden-xs">La tua libreria</a></li>
             </ul>
           </div>
 
-          <div class="nav-playlist">
-            <ul>
-              <li></li>
-              <li><a href="#">Crea Playlist</a></li>
+          <div class="nav-playlist hidden-xs">
+            <ul class="list-unstyled">
+              <li><h5>PLAYLIST</h5></li>
+              <li><a href="#"><i class="fas fa-plus-square"></i> Crea Playlist</a></li>
               <li><a href="#">Nome Playlist</a></li>
               <li><a href="#">Nome Playlist</a></li>
               <li><a href="#">Nome Playlist</a></li>
@@ -50,10 +50,10 @@
           </div>
 
           <div class="nav-footer">
-            <a href="">Installa <App></App></a>
+            <a href=""><i class="fas fa-arrow-circle-down"></i> <span class="hidden-xs">Installa App</span></a>
             <div class="account">
               <img src="img/profile.svg" alt="Profile">
-              <span>John Doe</span>
+              <span class="hidden-xs">John Doe</span>
             </div>
 
           </div>
@@ -168,34 +168,52 @@
       <footer>
         <div class="ms-slider">
 
-          <div class="song">
-            <ul class="list-unstyled">
-              <li>
-                <img src="img/sinister.jpeg" alt="Sinister-miniature">
-                <h5>Sinister</h5>
-                <span>Nome Brano</span>
-              </li>
-              <li><a href="">&hearts;</a></li>
-              <li><a href="">&hearts;</a></li>
-            </ul>
-          </div>
+          <ul class="list-unstyled song list-inline ms_ul">
+            <li>
+              <ul class="list-unstyled ms_ul">
+                <li><a href="#"><img src="img/sinister.jpeg" alt="Sinister-miniature"></a></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="list-unstyled ms_ul">
+                <li><h5 class="ms_h5">Sinister</h5></li>
+                <li><span>Nome Brano</span></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="list-unstyled ms_ul">
+                <li><a href="#"><i class="far fa-heart"></i></a></li>
+                <li><a href="#"><i class="far fa-folder"></i></a></li>
+              </ul>
+            </li>
+          </ul>
 
-          <div class="player">
-            <span>0:25</span>
-            <div class="player-components">
+          <ul class="player list-unstyled ms_ul">
+            <li>
+              <ul class="player-components list-inline">
+                <li><a href="#"><i class="fas fa-random"></i></a></li>
+                <li><a href="#"><i class="fas fa-step-backward"></i></a></li>
+                <li><a href="#"><i class="far fa-play-circle"></i></a></li>
+                <li><a href="#"><i class="fas fa-step-forward"></i></a></li>
+                <li><a href="#"><i class="fas fa-redo-alt"></i></a></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="player-bar list-inline ms_ul">
+                <li>0:25</li>
+                <li>4:35</li>
+              </ul>
+            </li>
+          </ul>
 
-            </div>
-            <span>4:35</span>
-          </div>
 
-          <div class="options">
-            <ul>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-            </ul>
+          <ul class="options list-inline ms_ul">
+            <li><a href="#"><i class="fas fa-ellipsis-v"></i><i class="fas fa-bars"></i></a></li>
+            <li><a href="#"><i class="fas fa-desktop"></i></a></li>
+            <li><a href="#"><i class="fas fa-volume-up"></i></a></li>
+          </ul>
 
-          </div>
+
         </div>
 
       </footer>
