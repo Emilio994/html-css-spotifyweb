@@ -147,6 +147,9 @@ footer {
   position: fixed;
   bottom: 0;
   right: 0;
+  color: white
+}
+footer a {
   color: white;
 }
 .ms-slider {
@@ -161,17 +164,19 @@ footer {
   margin: 0px;
   padding: 0px;
 }
-.ms-slider .song li:nth-child(2) ul li {
-  line-height: 10px;
+.ms-slider .song {
+  display: flex;
+  align-items: center;
+  line-height: 13px;
 }
 .ms-slider .song span {
   color: #717171;
   font-size: 11px;
-  margin-right: 20px;
 }
-.ms-slider .song a {
+.ms-slider .song a i {
   color: #717171;
   font-size: 17px;
+  padding: 3px 0;
 }
 .ms-slider .song img {
   height: 40px;
@@ -182,6 +187,35 @@ footer {
  margin: 0px;
  font-weight: bold;
  color: white;
+}
+.ms-slider .player i {
+  font-size: 14px;
+  padding: 0px 8px;
+}
+.ms-slider .player .player-components li:nth-child(3) i {
+  font-size: 24px;
+}
+.ms-slider .player .player-bar li {
+  padding: 0px;
+}
+.ms-slider .player .player-bar .time-line {
+  display: inline-block;
+  width: 450px;
+  height: 2px;
+  background-color: grey;
+  border-radius: 2px;
+  margin: 0px 15px;
+  position: relative;
+}
+.ms-slider .player .player-bar .time-line:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 2px;
+  background-color: white;
+  border-radius: 2px;
 }
 
 /* MQ SM (Content-Only) */
