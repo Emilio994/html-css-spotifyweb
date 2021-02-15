@@ -5,9 +5,9 @@
   box-sizing: border-box;
 }
 body {
-  /* background: red; */
-
+  font-family: 'Roboto', sans-serif;
 }
+
 /* UTILITIES */
 .wrapper {
   width: 100%;
@@ -65,6 +65,7 @@ main {
   color: white;
   padding: 0 1%;
   min-height: calc(100vh - 70px);
+  font-size: 13px;
 }
 .main-nav a {
   color: #717171;
@@ -93,7 +94,7 @@ main {
   margin: 5px 0;
 }
 .nav-footer img {
-  width: 10%;
+  width: 17px;
   vertical-align: top;
 }
 .nav-footer .account {
@@ -117,7 +118,6 @@ main {
   padding: 2%;
   font-size: 80%;
   color: #7A7C81;
-  font-weight: bold;
 }
 .main-content div {
   margin-bottom: 4%;
@@ -129,12 +129,6 @@ main {
 .main-content h3, .main-content h4 {
   color: white;
   font-weight: bold;
-}
-.main-content h3, .main-content p {
-  margin-left: 5px;
-}
-.main-content h4 {
-  font-size: 140%;
 }
 .main-head {
   text-transform: uppercase;
@@ -153,7 +147,9 @@ main {
 .popular-artists ul li {
   width: calc(100% / 6 - 20px);
   margin: 0 10px;
-  padding: 0px;
+}
+.main-content h3, .main-content p {
+  margin-left: 10px;
 }
 .recently-played img,
 .for-you img,
@@ -243,7 +239,7 @@ footer a {
   height: 2px;
   background-color: grey;
   border-radius: 2px;
-  margin: 0px 15px;
+  margin: 0px 15px 3px 15px;
   position: relative;
 }
 .ms-slider .player .player-bar .time-line:before {
@@ -287,6 +283,10 @@ footer a {
 
 /* MQ XS */
 @media screen and (max-width:600px) {
+  /* COMMON */
+  .hidden {
+    display: none;
+  }
   /* HEADER */
 
   /* MAIN */
