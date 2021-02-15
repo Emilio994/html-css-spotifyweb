@@ -6,12 +6,28 @@
 }
 body {
   /* background: red; */
+
 }
 /* UTILITIES */
 .wrapper {
   width: 100%;
   height: 100vh;
   background-color: #141922;
+}
+.wrapper a {
+  text-decoration: none;
+}
+.bulk {
+  font-weight: bold;
+}
+.list_inline {
+  display: inline-block;
+}
+.list_unstyled {
+  list-style: none;
+}
+.text_center {
+  text-align: center;
 }
 /* HEADER */
 .action-button {
@@ -30,6 +46,7 @@ body {
   font-weight: bold;
   padding: 0.5% 2%;
   border: 1.5px solid white;
+  color: white;
 }
 /* MAIN */
 main {
@@ -46,8 +63,8 @@ main {
   top: 0;
   left: 0;
   color: white;
-  flex-flow: column nowrap;
   padding: 0 1%;
+  min-height: calc(100vh - 70px);
 }
 .main-nav a {
   color: #717171;
@@ -57,14 +74,15 @@ main {
 .nav-footer {
   margin-bottom: 25px;
 }
-.nav-head * {
-  margin: 4px 0;
-}
 .nav-head img {
   width: 85%;
 }
+.nav-head ul li a img {
+  width: 15%;
+  vertical-align: bottom;
+}
 .nav-head ul li a span div {
-  transform: rotate(-15deg);
+  transform: rotate(-10deg);
   display: inline-block;
   margin-left: 1px;
 }
@@ -73,6 +91,10 @@ main {
 }
 .nav-playlist * {
   margin: 5px 0;
+}
+.nav-footer img {
+  width: 10%;
+  vertical-align: top;
 }
 .nav-footer .account {
   border-top: 1px solid #717171;
@@ -84,7 +106,9 @@ main {
   width: 25px;
   height: 25px;
   border-radius: 50%;
+  vertical-align: bottom;
 }
+
 /* Content */
 .main-content {
   width: calc(100% - 200px);
@@ -188,6 +212,16 @@ footer a {
  font-weight: bold;
  color: white;
 }
+.player .player-components {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.player .player-bar {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
 .ms-slider .player i {
   font-size: 14px;
   padding: 0px 8px;
@@ -216,6 +250,9 @@ footer a {
   height: 2px;
   background-color: white;
   border-radius: 2px;
+}
+.ms-slider .options {
+  display: flex;
 }
 
 /* MQ SM (Content-Only) */
