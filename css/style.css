@@ -116,6 +116,9 @@ main {
 .nav-playlist {
   overflow-y: auto;
 }
+.nav-playlist ul li:first-child {
+  padding: 0px 20px;
+}
 .nav-playlist ul li {
   padding: 10px 20px;
 }
@@ -129,8 +132,8 @@ main {
 /* Nav-Footer */
 .nav-footer {
   width: 100%;
-  align-self: flex-end;
   margin-bottom: 3%;
+  align-self: flex-end;
 }
 .nav-footer li {
   padding: 3px 20px;
@@ -239,6 +242,7 @@ main {
 /* Content-Head */
 .main-head {
   text-transform: uppercase;
+  line-height: 40px;
 }
 .main-head ul li {
   padding: 0 1%;
@@ -252,7 +256,7 @@ main {
   width: 35%;
   background: #ADFF2F;
   position: absolute;
-  bottom: -8px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   height: 2px;
@@ -306,6 +310,9 @@ footer a {
   align-items: center;
   line-height: 13px;
 }
+.ms-slider .song li:nth-child(3) ul li {
+  display: inline;
+}
 .ms-slider .song span {
   color: #717171;
   font-size: 11px;
@@ -313,8 +320,8 @@ footer a {
 .ms-slider .song a i {
   color: #717171;
   font-size: 17px;
-  padding: 3px 0;
-  margin-left: 30px;
+  padding: 0.3vh 0;
+  margin-left: 0.8vw;
 }
 .ms-slider .song img {
   height: 40px;
@@ -346,7 +353,7 @@ footer a {
 }
 .ms-slider .player i {
   font-size: 14px;
-  padding: 0px 8px;
+  padding: 0px 1vw;
 }
 .ms-slider .player .player-components li:nth-child(3) i {
   font-size: 24px;
@@ -362,7 +369,7 @@ footer a {
   height: 2px;
   background-color: grey;
   border-radius: 2px;
-  margin: 0px 15px 3px 15px;
+  margin: 0vh 1vw 0.1vh 1vw;
   position: relative;
 }
 .ms-slider .player .player-bar .time-line .line-load {
@@ -394,8 +401,8 @@ footer a {
   align-items: center;
   justify-content: flex-end;
 }
-.ms-slider .options * {
-  padding: 0px 3px;
+.ms-slider .options li {
+  padding: 0px 0.3vw;
 }
 .ms-slider .options i:hover {
   transform: scaleX(1.2);
@@ -432,7 +439,7 @@ footer a {
 /* MQ SM (Content-Only) */
 @media screen and (max-width: 992px) {
 
-  /* Main */
+  /* MAIN */
   /* Main-Content */
   .recently-played ul li,
   .for-you ul li,
@@ -440,9 +447,28 @@ footer a {
     width: calc(100% / 4 - 20px);
     margin: 0 10px;
   }
+  /* FOOTER */
+  /* Song */
+
 }
 /* MQ XS */
-@media screen and (max-width:600px) {
+@media screen and (max-width: 768px) {
+  /* MAIN */
+  /* Main Content */
+  .recently-played ul li,
+  .for-you ul li,
+  .popular-artists ul li {
+    width: calc(100% / 2 - 20px);
+    margin: 0 10px;
+  }
+  /* FOOTER */
+  /* Song */
+  .ms-slider .song li:nth-child(3) ul li {
+    display: block;
+  }
+}
+/* MQ Nav-bar */
+@media screen and (max-width: 600px) {
   /* COMMON */
   .hidden {
     display: none;
