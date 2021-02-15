@@ -119,6 +119,7 @@ main {
 .nav-playlist {
   overflow-y: auto;
   flex-grow: 8;
+  min-height: 30vh;
 }
 .nav-playlist ul li:first-child {
   padding: 0px 20px;
