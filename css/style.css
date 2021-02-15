@@ -364,6 +364,9 @@ footer a {
     display: inline-block;
   }
   /* HEADER */
+  .class-action {
+    width: calc(100% - 50px);
+  }
 
   /* MAIN */
   .main-nav {
@@ -381,6 +384,12 @@ footer a {
   .main-content {
     width: calc(100% - 50px);
     margin-left: 50px;
+  }
+  .recently-played ul li,
+  .for-you ul li,
+  .popular-artists ul li {
+    width: calc(100% / 2 - 20px);
+    margin: 0 10px;
   }
   /* FOOTER */
 }
