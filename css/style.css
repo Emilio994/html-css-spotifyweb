@@ -12,7 +12,6 @@ body {
 /* UTILITIES */
 .wrapper {
   width: 100%;
-  height: 100vh;
 }
 .wrapper a {
   text-decoration: none;
@@ -37,6 +36,7 @@ body {
   right: 0;
   background-color: rgba(0,0,0,0.5);
   width: calc(100% - 200px);
+  z-index: 999;
 }
 .action-button {
   height: 70px;
@@ -54,18 +54,20 @@ body {
   border: 1.5px solid white;
   color: white;
 }
+.action-button .ms_button:hover {
+  transform: scale(1.2);
+}
 
 /* MAIN */
 main {
   width: 100%;
   margin: 70px 0px;
-  height: 100vh;
+  height: calc(100% - 70px);
 }
 /* Nav-bar */
 .main-nav {
   width: 200px;
   background-color: black;
-  height: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -79,13 +81,14 @@ main {
 .main-nav li {
   padding: 5px 20px;
 }
-
-/* Nav-common */
-.nav-head {
-  margin-bottom: 20px;
+.main-nav li a:hover {
+  color: white;
 }
 
 /* Nav-Head */
+.nav-head {
+
+}
 .nav-head .logo_full {
   width: 130px;
   margin: 20px 0px 0px 20px;
@@ -117,7 +120,9 @@ main {
 
 /* Nav-Playlist */
 .nav-playlist {
+  height: 44%;
   overflow-y: auto;
+  border: 1px solid white;
 }
 .nav-playlist i {
   font-size: 35px;
@@ -135,9 +140,8 @@ main {
 
 /* Nav-Footer */
 .nav-footer {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-end;
+  align-self: flex-end;
+  width: 100%;
   border: 1px solid white;
 }
 .nav-footer img {
@@ -162,17 +166,20 @@ main {
 /* Main - Content */
 .main-content {
   width: calc(100% - 200px);
-  height: calc(100% -70px);
+  height: 100%;
   margin-left: 200px;
-  padding: 2%;
+  padding: 1%;
   font-size: 80%;
   color: #7A7C81;
   font-weight: bold;
 }
-
+/* Main Head */
+.main-head li a:hover {
+  color: white;
+}
 /* Content - Common */
-.main-content div {
-  margin-bottom: 4%;
+.main-content ul {
+  margin: 2% 0px;
 }
 .main-content a {
   color: #7A7C81;
@@ -198,14 +205,45 @@ main {
 .for-you img,
 .popular-artists img {
   width: 100%;
-  margin-top: 10%;
+  position: relative;
 }
 .recently-played ul,
 .for-you ul,
-.popular-artists ul
- {
+.popular-artists ul {
   display: flex;
   flex-wrap: wrap;
+}
+.main-content .layover-group  {
+  position: relative;
+}
+.main-content .layover-group i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 50px;
+  display: none;
+}
+.main-content ul li:hover .layover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+.main-content ul li:hover .layover-group i {
+  display: inline-block;
+}
+.main-content ul li:hover .layover-round {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 50%;
 }
 
 /* Content-Head */
@@ -299,8 +337,12 @@ footer a {
  font-weight: bold;
  color: white;
 }
+.ms-slider .song li a i:hover,
+.ms-slider .song li span:hover {
+  color: white;
+}
 
-/* Slier Player */
+/* Slider Player */
 .player .player-components {
   display: flex;
   justify-content: center;
@@ -319,6 +361,9 @@ footer a {
 .ms-slider .player .player-components li:nth-child(3) i {
   font-size: 24px;
 }
+.ms-slider .player i:hover {
+  transform: scale(1.2);
+}
 .ms-slider .player .player-bar li {
   padding: 0px;
 }
@@ -335,10 +380,14 @@ footer a {
   position: absolute;
   top: 0;
   left: 0;
-  width: 5vw;
+  width: 15%;
   height: 2px;
   background-color: white;
   border-radius: 2px;
+  content: "";
+}
+.ms-slider .player .player-bar:hover .time-line:before {
+  background-color: #ADFF2F;
 }
 
 /* Slider - Options */
@@ -350,6 +399,9 @@ footer a {
 }
 .ms-slider .options * {
   padding: 0px 3px;
+}
+.ms-slider .options i:hover {
+  transform: scaleX(1.2);
 }
 .ms-slider .options .small-time-line {
   width: 10vw;
@@ -363,15 +415,20 @@ footer a {
   position: absolute;
   top: 0;
   left: 0;
-  width: 3vw;
+  width: 30%;
   height: 2px;
   background-color: white;
   border-radius: 2px;
+}
+.ms-slider .options .small-player-bar:hover .small-time-line:after {
+  background-color: #ADFF2F;
 }
 
 /* MQ SM (Content-Only) */
 @media screen and (max-width: 992px) {
 
+  /* Main */
+  /* Main-Content */
   .recently-played ul li,
   .for-you ul li,
   .popular-artists ul li {
@@ -385,15 +442,13 @@ footer a {
   .hidden {
     display: none;
   }
-  .show {
-    display: inline-block;
-  }
   /* HEADER */
   .class-action {
     width: calc(100% - 50px);
   }
 
   /* MAIN */
+  /* Main-Nav */
   .main-nav {
     width: 50px;
     display: flex;
@@ -404,6 +459,7 @@ footer a {
     padding: 5px 0px;
     text-align: center;
   }
+  /* Nav-Head */
   .nav-head ul li:first-child {
     border: none;
   }
@@ -411,12 +467,14 @@ footer a {
     display: block;
     margin: 5px auto;
   }
+  /* Nav-Footer */
   .nav-footer .account {
     border: none;
   }
   .nav-footer img {
     margin: 0px;
   }
+  /* Main-Content */
   .main-content {
     width: calc(100% - 50px);
     margin-left: 50px;
