@@ -59,6 +59,7 @@ body {
 main {
   width: 100%;
   margin: 70px 0px;
+  height: 100vh;
 }
 /* Nav-bar */
 .main-nav {
@@ -69,7 +70,7 @@ main {
   top: 0;
   left: 0;
   color: white;
-  min-height: calc(100vh - 70px);
+  height: calc(100% - 70px);
   font-size: 13px;
 }
 .main-nav a {
@@ -133,6 +134,12 @@ main {
 }
 
 /* Nav-Footer */
+.nav-footer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  border: 1px solid white;
+}
 .nav-footer img {
   width: 17px;
   vertical-align: top;
@@ -155,7 +162,7 @@ main {
 /* Main - Content */
 .main-content {
   width: calc(100% - 200px);
-  height: 100%;
+  height: calc(100% -70px);
   margin-left: 200px;
   padding: 2%;
   font-size: 80%;
@@ -241,7 +248,7 @@ footer {
   position: fixed;
   bottom: 0;
   right: 0;
-  color: white
+  color: white;
 }
 footer a {
   color: white;
@@ -363,7 +370,7 @@ footer a {
 }
 
 /* MQ SM (Content-Only) */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 992px) {
 
   .recently-played ul li,
   .for-you ul li,
