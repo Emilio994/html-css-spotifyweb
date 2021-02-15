@@ -208,6 +208,20 @@ main {
 .main-head ul li {
   padding: 0 1%;
 }
+.main-head ul li:first-child {
+  position: relative;
+}
+.main-head ul li:first-child::after {
+  content: "";
+  display: inline-block;
+  width: 35%;
+  background: #ADFF2F;
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+}
 
 /* Content - Recently Played */
 .main-content .recently-played {
