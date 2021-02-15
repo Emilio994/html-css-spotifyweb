@@ -194,6 +194,7 @@ main {
 .popular-artists ul
  {
   display: flex;
+  flex-wrap: wrap;
 }
 
 /* Content-Head */
@@ -205,6 +206,10 @@ main {
 }
 
 /* Content - Recently Played */
+.main-content .recently-played {
+display: flex;
+flex-flow: row wrap;
+}
 /* Content - For you */
 
 /* Content - Artists */
@@ -340,7 +345,15 @@ footer a {
 }
 
 /* MQ SM (Content-Only) */
+@media screen and (max-width: 992px) {
 
+  .recently-played ul li,
+  .for-you ul li,
+  .popular-artists ul li {
+    width: calc(100% / 4 - 20px);
+    margin: 0 10px;
+  }
+}
 /* MQ XS */
 @media screen and (max-width:600px) {
   /* COMMON */
