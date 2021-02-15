@@ -69,12 +69,14 @@ main {
   top: 0;
   left: 0;
   color: white;
-  padding: 1%;
-  min-height: calc(100vh - 140px);
+  min-height: calc(100vh - 70px);
   font-size: 13px;
 }
 .main-nav a {
   color: #717171;
+}
+.main-nav li {
+  padding: 5px 20px;
 }
 
 /* Nav-common */
@@ -85,19 +87,19 @@ main {
 /* Nav-Head */
 .nav-head .logo_full {
   width: 130px;
+  margin: 20px 0px 0px 20px;
 }
 .nav-head .logo_small {
   width: 30px;
   display: none;
 }
-.nav-head ul {
+.nav-head ul,
+.nav-footer {
   margin-top: 20px;
-}
-.nav-head ul li {
-  margin: 5px 0px;
 }
 .nav-head ul li:first-child {
   color: white;
+  border-left: 2px solid #ADFF2F;
 }
 .nav-head ul li a img {
   width: 30px;
@@ -134,11 +136,13 @@ main {
 .nav-footer img {
   width: 17px;
   vertical-align: top;
+  margin-right: 5px;
 }
 .nav-footer .account {
   border-top: 1px solid #717171;
   padding-top: 10px;
   margin: 5px 0px;
+  color: white;
 }
 .nav-footer .account img {
   width: 25px;
@@ -345,7 +349,7 @@ footer a {
 }
 
 /* MQ SM (Content-Only) */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
 
   .recently-played ul li,
   .for-you ul li,
@@ -375,11 +379,22 @@ footer a {
     flex-flow: row wrap;
     justify-content: center;
   }
+  .main-nav li {
+    padding: 5px 0px;
+    text-align: center;
+  }
+  .nav-head ul li:first-child {
+    border: none;
+  }
   .nav-head .logo_small {
-    display: inline-block;
+    display: block;
+    margin: 5px auto;
   }
   .nav-footer .account {
     border: none;
+  }
+  .nav-footer img {
+    margin: 0px;
   }
   .main-content {
     width: calc(100% - 50px);
