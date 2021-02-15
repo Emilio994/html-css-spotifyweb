@@ -75,7 +75,7 @@ main {
   height: calc(100% - 70px);
   font-size: 13px;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
   align-items: flex-start;
 }
 .main-nav a {
@@ -86,6 +86,9 @@ main {
 }
 
 /* Nav-Head */
+.nav-head {
+  flex-grow: 1;
+}
 .nav-head .logo_full {
   width: 130px;
   margin: 20px 0px 0px 20px;
@@ -115,6 +118,7 @@ main {
 /* Nav-Playlist */
 .nav-playlist {
   overflow-y: auto;
+  flex-grow: 8;
 }
 .nav-playlist ul li:first-child {
   padding: 0px 20px;
@@ -134,6 +138,7 @@ main {
   width: 100%;
   margin-bottom: 3%;
   align-self: flex-end;
+  flex-grow: 1;
 }
 .nav-footer li {
   padding: 3px 20px;
@@ -369,7 +374,7 @@ footer a {
 }
 .ms-slider .player .player-bar .time-line {
   width: 25vw;
-  height: 2px;
+  height: 2.5px;
   background-color: grey;
   border-radius: 2px;
   margin: 0vh 1vw 0.1vh 1vw;
@@ -412,7 +417,7 @@ footer a {
 }
 .ms-slider .options .small-time-line {
   width: 10vw;
-  height: 2px;
+  height: 2.5px;
   background-color: grey;
   border-radius: 2px;
   position: relative;
