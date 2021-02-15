@@ -65,7 +65,7 @@ main {
   top: 0;
   left: 0;
   color: white;
-  padding: 0 1%;
+  padding: 1%;
   min-height: calc(100vh - 70px);
   font-size: 13px;
 }
@@ -82,10 +82,16 @@ main {
 
 /* Nav-Head */
 .nav-head img {
-  width: 85%;
+  width: 130px;
+}
+.nav-head ul {
+  margin-top: 20px;
+}
+.nav-head ul li {
+  margin: 5px 0px;
 }
 .nav-head ul li a img {
-  width: 15%;
+  width: 30px;
   vertical-align: bottom;
 }
 .nav-head ul li a span div {
@@ -98,30 +104,39 @@ main {
 }
 
 /* Nav-Playlist */
+.nav-playlist {
+  overflow-y: auto;
+}
 .nav-playlist * {
   margin: 5px 0;
 }
-.nav-playlist
 .nav-footer img {
   width: 17px;
   vertical-align: top;
 }
 
 /* Nav-Footer */
+.nav-footer {
+  border: 1px solid white;
+}
+.nav-footer img {
+  width: 17px;
+  vertical-align: top;
+}
 .nav-footer .account {
   border-top: 1px solid #717171;
   padding-top: 10px;
   margin: 5px 0px;
 }
-.account img {
-  background: #808080;
+.nav-footer .account img {
   width: 25px;
   height: 25px;
   border-radius: 50%;
   vertical-align: bottom;
+  background-color: grey;
 }
 
-/* Content */
+/* Main - Content */
 .main-content {
   width: calc(100% - 200px);
   height: 100%;
@@ -177,7 +192,10 @@ main {
   padding: 0 1%;
 }
 
-/* Content */
+/* Content - Recently Played */
+/* Content - For you */
+
+/* Content - Artists */
 .popular-artists img {
   border-radius: 50%;
 }
