@@ -29,6 +29,7 @@ body {
 .text_center {
   text-align: center;
 }
+
 /* HEADER */
 .action-button {
   height: 70px;
@@ -48,6 +49,7 @@ body {
   border: 1.5px solid white;
   color: white;
 }
+
 /* MAIN */
 main {
   width: 100%;
@@ -70,11 +72,15 @@ main {
 .main-nav a {
   color: #717171;
 }
+
+/* Nav-common */
 .nav-head,
 .nav-playlist,
 .nav-footer {
   margin-bottom: 25px;
 }
+
+/* Nav-Head */
 .nav-head img {
   width: 85%;
 }
@@ -90,13 +96,18 @@ main {
 .nav-head  ul li:first-child a {
   color: white;
 }
+
+/* Nav-Playlist */
 .nav-playlist * {
   margin: 5px 0;
 }
+.nav-playlist
 .nav-footer img {
   width: 17px;
   vertical-align: top;
 }
+
+/* Nav-Footer */
 .nav-footer .account {
   border-top: 1px solid #717171;
   padding-top: 10px;
@@ -118,7 +129,10 @@ main {
   padding: 2%;
   font-size: 80%;
   color: #7A7C81;
+  font-weight: bold;
 }
+
+/* Content - Common */
 .main-content div {
   margin-bottom: 4%;
 }
@@ -126,21 +140,15 @@ main {
   color: #7A7C81;
   text-decoration: none;
 }
-.main-content h3, .main-content h4 {
+.main-content h2, .main-content h3 {
   color: white;
-  font-weight: bold;
 }
-.main-head {
-  text-transform: uppercase;
+.main-content h2, .main-content p {
+  margin: 0px 0px 10px 10px;
 }
-.main-head ul li {
-  padding: 0 1%;
-}
-.recently-played ul,
-.for-you ul,
-.popular-artists ul
- {
-  display: flex;
+.main-content h3 {
+  margin: 14px 0px 10px 0px;
+  line-height: 16px;
 }
 .recently-played ul li,
 .for-you ul li,
@@ -148,15 +156,28 @@ main {
   width: calc(100% / 6 - 20px);
   margin: 0 10px;
 }
-.main-content h3, .main-content p {
-  margin-left: 10px;
-}
 .recently-played img,
 .for-you img,
 .popular-artists img {
   width: 100%;
   margin-top: 10%;
 }
+.recently-played ul,
+.for-you ul,
+.popular-artists ul
+ {
+  display: flex;
+}
+
+/* Content-Head */
+.main-head {
+  text-transform: uppercase;
+}
+.main-head ul li {
+  padding: 0 1%;
+}
+
+/* Content */
 .popular-artists img {
   border-radius: 50%;
 }
@@ -172,6 +193,8 @@ footer {
 footer a {
   color: white;
 }
+
+/* Slider - Common */
 .ms-slider {
   display: flex;
   justify-content: space-between;
@@ -188,6 +211,8 @@ footer a {
   margin: 0px;
   padding: 0px;
 }
+
+/* Slider - Song */
 .ms-slider .song {
   display: flex;
   align-items: center;
@@ -214,6 +239,8 @@ footer a {
  font-weight: bold;
  color: white;
 }
+
+/* Slier Player */
 .player .player-components {
   display: flex;
   justify-content: center;
@@ -252,6 +279,8 @@ footer a {
   background-color: white;
   border-radius: 2px;
 }
+
+/* Slider - Options */
 .ms-slider .options {
   display: flex;
   font-size: 12px;
