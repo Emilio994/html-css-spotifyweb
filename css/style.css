@@ -240,9 +240,12 @@ main {
 }
 
 /* Content-Head */
-.main-head {
+.main-head ul {
   text-transform: uppercase;
   line-height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .main-head ul li {
   padding: 0 1%;
