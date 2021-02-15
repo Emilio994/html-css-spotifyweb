@@ -74,21 +74,21 @@ main {
   color: white;
   height: calc(100% - 70px);
   font-size: 13px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
 }
 .main-nav a {
   color: #717171;
 }
 .main-nav li {
-  padding: 5px 20px;
+  padding: 10px 20px;
 }
 .main-nav li a:hover {
   color: white;
 }
 
 /* Nav-Head */
-.nav-head {
-
-}
 .nav-head .logo_full {
   width: 130px;
   margin: 20px 0px 0px 20px;
@@ -97,8 +97,7 @@ main {
   width: 30px;
   display: none;
 }
-.nav-head ul,
-.nav-footer {
+.nav-head ul{
   margin-top: 20px;
 }
 .nav-head ul li:first-child {
@@ -109,20 +108,13 @@ main {
   width: 30px;
   vertical-align: bottom;
 }
-.nav-head ul li a span div {
-  transform: rotate(-10deg);
-  display: inline-block;
-  margin-left: 1px;
-}
 .nav-head  ul li:first-child a {
   color: white;
 }
 
 /* Nav-Playlist */
 .nav-playlist {
-  height: 44%;
   overflow-y: auto;
-  border: 1px solid white;
 }
 .nav-playlist i {
   font-size: 35px;
@@ -130,19 +122,15 @@ main {
   vertical-align: middle;
   margin-right: 3px;
 }
-.nav-playlist li {
-  margin: 10px 0;
-}
-.nav-footer img {
-  width: 17px;
-  vertical-align: top;
-}
 
 /* Nav-Footer */
 .nav-footer {
-  align-self: flex-end;
   width: 100%;
-  border: 1px solid white;
+  align-self: flex-end;
+  margin-bottom: 3%;
+}
+.nav-footer li {
+  padding: 3px 20px;
 }
 .nav-footer img {
   width: 17px;
@@ -152,14 +140,13 @@ main {
 .nav-footer .account {
   border-top: 1px solid #717171;
   padding-top: 10px;
-  margin: 5px 0px;
   color: white;
 }
 .nav-footer .account img {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  vertical-align: bottom;
+  vertical-align: middle;
   background-color: grey;
 }
 
