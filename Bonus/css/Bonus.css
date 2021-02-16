@@ -3,16 +3,7 @@
 .action-button button {
   transition: all 0.5s linear;
 }
-
 /* Animation */
-main .main-nav .nav-playlist ul li:nth-child(2) a i {
-  animation: list-glow 1s linear -1s infinite alternate;
-}
-@keyframes list-glow {
-  0% {text-shadow: 0px 0px 0px #ADFF2F;}
-  100% {text-shadow: 0px 0px 5px #ADFF2F;}
-}
-
 footer .player .player-components li:nth-child(3) a i {
   animation: play 1s ease-in -1s infinite alternate;
 }
@@ -20,7 +11,6 @@ footer .player .player-components li:nth-child(3) a i {
   0% {transform: scale(1);}
   100% {transform: scale(1.3);}
 }
-
 footer .player .player-components li:last-child a i {
   animation: redo 1s linear -1s infinite;
 }
@@ -28,7 +18,6 @@ footer .player .player-components li:last-child a i {
   0% {transform: rotate(0deg);}
   100% {transform: rotate(360deg);}
 }
-
 
 /* MQ Call to Action */
 @media screen and (max-height: 350px) {

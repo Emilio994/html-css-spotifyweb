@@ -81,7 +81,7 @@ main {
 .main-nav a {
   color: #717171;
 }
-.main-nav li a:hover {
+.main-nav li:hover a {
   color: white;
 }
 
@@ -104,16 +104,13 @@ main {
 .nav-head ul li {
   padding: 5px 20px;
 }
-.nav-head ul li:first-child {
+.nav-head ul li:hover {
   color: white;
   border-left: 2px solid #ADFF2F;
 }
 .nav-head ul li a img {
   width: 30px;
   vertical-align: bottom;
-}
-.nav-head  ul li:first-child a {
-  color: white;
 }
 
 /* Nav-Playlist */
@@ -174,7 +171,7 @@ main {
   font-weight: bold;
 }
 /* Main Head */
-.main-head li a:hover {
+.main-head li:hover a {
   color: white;
 }
 /* Content - Common */
@@ -258,10 +255,10 @@ main {
 .main-head ul li {
   padding: 0 1%;
 }
-.main-head ul li:first-child {
+.main-head ul li {
   position: relative;
 }
-.main-head ul li:first-child::after {
+.main-head ul li:hover::after {
   content: "";
   display: inline-block;
   width: 35%;
