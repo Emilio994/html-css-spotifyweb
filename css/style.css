@@ -62,7 +62,6 @@ body {
 main {
   width: 100%;
   margin: 70px 0px;
-  height: calc(100% - 70px);
 }
 /* Nav-bar */
 .main-nav {
@@ -119,8 +118,8 @@ main {
 /* Nav-Playlist */
 .nav-playlist {
   overflow-y: auto;
-  flex-grow: 8;
-  min-height: 150px;
+  flex-grow: 99;
+  min-height: 180px;
 }
 .nav-playlist ul li:first-child {
   padding: 0px 20px;
@@ -139,7 +138,6 @@ main {
 .nav-footer {
   width: 100%;
   margin-bottom: 3%;
-  align-self: flex-end;
   flex-grow: 1;
 }
 .nav-footer li {
@@ -205,7 +203,6 @@ main {
 .for-you img,
 .popular-artists img {
   width: 100%;
-  position: relative;
 }
 .recently-played ul,
 .for-you ul,
@@ -512,6 +509,9 @@ footer a {
     margin: 5px auto;
   }
   /* Nav-Footer */
+  .nav-footer {
+    align-self: flex-end;
+  }
   .nav-footer .account {
     border: none;
   }
