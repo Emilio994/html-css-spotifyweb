@@ -164,7 +164,6 @@ main {
 /* Main - Content */
 .main-content {
   width: calc(100% - 200px);
-  height: 100%;
   margin-left: 200px;
   padding: 1%;
   font-size: 80%;
@@ -307,9 +306,8 @@ footer a {
 .ms-slider .side-col {
   width: 25%;
 }
-.ms-slider .ms_ul {
-  margin: 0px;
-  padding: 0px;
+.ms-slider .center-col {
+  width: 50%;
 }
 
 /* Slider - Song */
@@ -340,8 +338,6 @@ footer a {
   margin-right: 10px;
 }
 .ms-slider .song .ms_h5 {
- margin: 0px;
- font-weight: bold;
  color: white;
 }
 .ms-slider .song li a i:hover,
@@ -371,9 +367,6 @@ footer a {
 .ms-slider .player i:hover {
   transform: scale(1.2);
 }
-.ms-slider .player .player-bar li {
-  padding: 0px;
-}
 .ms-slider .player .player-bar .time-line {
   width: 25vw;
   height: 2.5px;
@@ -390,10 +383,10 @@ footer a {
   top: 0;
   left: 0;
 }
-.ms-slider .player .player-bar .time-line:hover .line-load {
+.ms-slider .player .player-bar:hover .time-line .line-load {
   background-color: #ADFF2F;
 }
-.ms-slider .player .player-bar .time-line:hover .line-circle {
+.ms-slider .player .player-bar:hover .time-line .line-circle {
   position: absolute;
   height: 15px;
   width: 15px;
@@ -432,10 +425,10 @@ footer a {
   top: 0;
   left: 0;
 }
-.ms-slider .options .small-time-line:hover .small-line-load {
+.ms-slider .options:hover .small-time-line .small-line-load {
   background-color: #ADFF2F;
 }
-.ms-slider .options .small-time-line:hover .small-line-circle {
+.ms-slider .options:hover .small-time-line .small-line-circle {
   position: absolute;
   height: 15px;
   width: 15px;
